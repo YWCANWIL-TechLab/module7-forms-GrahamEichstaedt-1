@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+        <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>Module 7 Examples</title>
+        </head>
+        <body>
+                <!-- <label for="first-name">Enter your first name:</label> -->
+                <form autocomplete="on">
+                        <input id="first-name" type="text" placeholder="Enter your first name" style="display: block;" readonly="readonly">
+                        <br>
+                        <input> <!-- Default value = text -->
+                        <button type="submit">Submit</button>
+                </form>
+                <form>
+                        <p>
+                                What programming language do you want to learn next?
+                        </p>
+                        <input type="radio" id="js" name="lang" value="JavaScript" ><label for="js">JavaScript</label>
+                        <br>
+                        <input type="radio" id="java" name="lang" value="Java"><label for="java">Java</label>
+                        <br>
+                        <input type="radio" id="c" name="lang" value="C"><label for="c">C</label>
+                        <br>
+                </form>
+                <form action="">
+                        <p>
+                                What programming language do you want to learn next?
+                        </p>
+                        <input type="checkbox" id="c++" name="language" value="C++">
+                        <label for="c++">C++</label>
+                        <br>
+                        <input type="checkbox" id="python" name="language" value="Python">
+                        <label for="python">Python</label>
+                        <br>
+                        <input type="checkbox" id="kotlin" name="language" value="Kotlin" required="required">
+                        <label for="kotlin">Kotlin (The Best Language)</label>
+                        <br>
+                        <!-- Older -->
+                        <input type="submit" value="Submit"> 
+                        <!-- Newer -->
+                        <button type="submit">Click Me!</button>
+                </form>
+                
+                <form>
+                        <label for="dropdown">Types of Furniture!</label>
+                        <br>
+                        <select id="dropdown" name="dropdown" multiple="multiple">
+                                <option disabled="disabled">Select an Option:</option>
+                                <option value="Table">Table</option>
+                                <option value="Chair">Chair</option>
+                                <option value="Bed" selected="selected">Bed</option>
+                        </select>
+                </form>
+                <form>
+                        <!-- <label for="review">Leave a Review!</label> -->
+                        <textarea id="review" name="review" placeholder="Leave a review!" cols="50" rows="10"></textarea>
+                        <button onclick="alert('Hello world');">Click Me!</button>
+                </form>
+                <form>
+                        <fieldset>
+                                <legend>Personal Information</legend>
+                                <input type="text" placeholder="First Name">
+                                <br>
+                                <input type="text" placeholder="Last Name">
+                        </fieldset>
+                </form>
+                <form>
+                        <label for="school-dropdown">Select a School</label>
+                        <br>
+                        <input id="school-dropdown" name="schools"  list="schools">
+                        <datalist id="schools">
+                                <option value="Elementary">Elementary</option>
+                                <option value="Middle">Middle</option>
+                                <option value="High">High</option>
+                        </datalist>
+                </form>
+                <form>
+                        <input type="text" placeholder="Enter your username:" value="JohnDoe">
+                        <br>
+                        <input type="password" placeholder="Enter your password:" >
+                        <input type="reset">
+                </form>
+                <form>
+                        <label for="color">Pick a Color!</label>
+                        <input id="color" type="color">
+                </form>
+                <form>
+                        <label for="date">What is your birthday?</label>
+                        <input type="date" id="date">
+                        <br>
+                        <br>
+                        <label for="appointment">Select an appointment time:</label>
+                        <br>
+                        <input id="appointment" type="datetime-local" >
+                </form>
+                <form>
+                        <input type="email" placeholder="Enter your email">
+                        <button type="submit">Submit!</button>
+                </form>
+                <br>
+                <form>
+                        <label for="filepicker">Select a file</label>
+                        <br>
+                        <input type="file" id="filepicker" multiple="multiple">
+                </form>
+                <form>
+                        <label for="month">Select a month:</label>
+                        <br>
+                        <input type="month" id="month">
+                </form>
+                <form>
+                        <label for="num">Pick a number: </label>
+                        <br>
+                        <input type="number" id="num" min="0" max="20" step="5">
+                        
+                </form>
+                <form>
+                        <!-- ! DO NOT ACTUALLY USE FOR PHONE NUMBER -->
+                        <label for="phone-number">Enter your phone number: </label>
+                        <br>
+                        <input type="range" id="phone-number">
+                        <br>
+                        <!-- * This is how this actually works -->
+                        <label for="volume">Select a volume</label>
+                        <br>
+                        <input type="range" id="volume">
+                        <br>
+                        
+                </form>
+                <form>
+                        <input type="search" placeholder="Search something">
+                </form>
+                <form>
+                        <input type="tel" placeholder="Enter a phone number">
+                </form>
+                <form>
+                        <input type="time" placeholder="Enter a time">
+                </form>
+                <br>
+                <form>
+                        <input type="url" placeholder="Enter a url">
+                        <br>
+                        <button type="submit">Submit</button>
+                </form>
+                <br>
+                <form>
+                        <input type="week" placeholder="Enter a week">
+                </form>
+                <br>
+                <meter id="meter" min="0" max="100" value="100" low="25" high="75" optimum="100"></meter>
+        </body>
+</html>
